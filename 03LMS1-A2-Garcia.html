@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- Visual Studio Code @author: Patrick Renz Garcia-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="">
+    <title>Contact</title>
+    <style>
+        body {margin: 0; padding: 0;}
+        .title {font-size: 60px; color: black; font-family: Arial;}
+        .article {font-size: 20px; color: orange;}
+        .orange {background: linear-gradient(to left,#ff9800,#ffa726,#fb8c00); margin: 0; padding: 10px;}
+        .black {background: linear-gradient(to right,#212121, #424242); margin: 0; height: 600px; padding: 20px;}
+    </style>
+</head>
+<body>
+    <div class="orange title"> 
+    <text><span>Contact Form</span></text>
+    </div>
+    <div class="black article">
+    <form>
+        <label>Username:</label>
+        <input name="name" type="text" placeholder="Your Username" autofocus/><br>
+        <label>E-mail Address:</label>
+        <input name="email" type="email" placeholder="example@gmail.com"/><br>
+        <textarea name="message" placeholder="Send message here!"></textarea>
+        <input type="submit" value="send" class="submit" />
+    </form>
+    </div>
+</body>
+</html>
