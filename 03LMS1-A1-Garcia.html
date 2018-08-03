@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schedule in STI</title>
+        <style>
+            * {box-sizing: border-box;}
+            ul {list-style-type: none;}
+            body {font-family: Verdana, sans-serif;}
+            .bglinear {background: linear-gradient(to left, #ff8f00, #ffa000, #ffb300, #ffc107, #ffca28, #ffd54f)}
+            .days {padding: 10px 0; background: #eee; margin: 0;}
+            .days li {list-style-type: none;display: inline-block;width: 13.6%;text-align: center;margin-bottom: 5px;font-size: 12px;color: #616161;}
+            .weekdays {margin: 0;padding: 15px 0;background: rgb(209, 199, 199);}
+            .weekdays li {display: inline-block;width: 13.66%;color: #616161;text-align: center;}
+            .days {padding: 25px 0;padding-bottom: 30px;background: rgb(219, 216, 216);margin: 0;}
+            .days li {list-style-type: none;display: inline-block;width: 13.6%;
+            text-align: center;margin-bottom: 5px;font-size: 15px;color: #777;padding-left: 17px;padding-right: 17px;}
+            @media screen and (max-width:720px) {.weekdays li, .days li {width: 13.1%;}}
+            @media screen and (max-width: 420px) {.weekdays li, .days li {width: 12.5%;}.days li .active {padding: 2px;}}
+            @media screen and (max-width: 290px) {.weekdays li, .days li {width: 12.2%;}}
+        </style>
+</head>
+<body class="bglinear">
+    <h1 style="color: #616161; line-height: 0; font-size: 40px;">My Coding Schedule</h1>
+        <p style="text-align: right; color: #616161; font-size: 20px">Patrick Renz Garcia<br>ICT-104</p>
+    <table>
+    <ul class="weekdays">
+        <li>Time</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+    </ul>
+
+    <ul class="days">
+        <li>11:30-12:00 PM</li> <!-- TIME -->
+        <li>Programming 1 Java (ILS)</li> <!-- Monday -->
+        <li></li> <!-- Tuesday -->
+        <li>Homeroom</li> <!-- Wednesday -->
+        <li></li> <!-- Thurstday -->
+        <li></li> <!-- Friday -->
+        <li>Programming 2 HTML (ILS)</li> <!-- Saturday-->
+    </ul>
+    <ul class="days">
+        <li>12:00-2:30 PM</li> <!-- TIME -->
+        <li>21st Century Literature</li> <!-- Monday -->
+        <li>Oral Communication (ILS)</li> <!-- Tuesday -->
+        <li>Media Information Literacy (LEC)</li> <!-- Wednesday -->
+        <li>21st Century Literature</li> <!-- Thurstday -->
+        <li>Media Information Literacy (ILS)</li> <!-- Friday -->
+        <li>Media Information Literacy (LAB)</li> <!-- Saturday-->
+    </ul>
+    <ul class="days">
+        <li>2:30-4:00 PM</li> <!-- TIME -->
+        <li>General Mathematics</li> <!-- Monday -->
+        <li>Philosophy of the Human Person (ILS)</li> <!-- Tuesday -->
+        <li>Philosophy of the Human Person</li> <!-- Wednesday -->
+        <li>General Mathematics</li> <!-- Thurstday -->
+        <li>General Mathematics (ILS)</li> <!-- Friday -->
+        <li>Philosophy of the Human Person</li> <!-- Saturday-->
+    </ul>
+    <ul class="days">
+        <li>4:00(4:30)-7:00 PM</li> <!-- TIME -->
+        <li>Physical Education (4:00-6:00 PM)</li> <!-- Monday -->
+        <li>Programming Java (4:00-5:30 PM)</li> <!-- Tuesday -->
+        <li>Break Time (4:00-4:30 PM)</li> <!-- Wednesday -->
+        <li>21st Century Literature (ILS)</li> <!-- Thurstday -->
+        <li>Programming Java (4:00-5:30 PM)</li> <!-- Friday -->
+        <li>Break Time (4:00-4:30 PM)</li> <!-- Saturday-->
+    </ul>
+    <ul class="days">
+        <li>4:30(5:30-7:00 PM)</li> <!-- TIME -->
+        <li></li> <!-- Monday -->
+        <li>Programming HTML/CSS (5:30-7:00 PM)</li> <!-- Tuesday -->
+        <li>Oral Communication (4:30-6:00 PM)</li> <!-- Wednesday -->
+        <li></li> <!-- Thurstday -->
+        <li>Programming HTML/CSS (5:30-7:00 PM)</li> <!-- Friday -->
+        <li>Oral Communication (4:30-6:00 PM)</li> <!-- Saturday-->
+    </ul>
+    </table>
+</body>
+</html>
