@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG Animate & Path - Stroke-dashoffset Property</title>
+</head>
+<style>
+    .padleft {padding-left: 50px; padding-right: 50px; padding-top: 28px;}
+    .bg {background-color: rgba(0, 0, 0, .2); width: 300px;float: left; position: none;}
+    .svg {width: 300px;display: block;position: absolute;}
+    .path {stroke-dasharray: 320;stroke-dashoffset: 0;animation: dash 1s linear;}
+    @keyframes dash {
+        from {stroke-dashoffset: 320;}
+        to {stroke-dashoffset: 0;}
+    }
+ .div-title {background-color: #29b6f6; float: left; position: none;}
+    body {
+        background: linear-gradient(to right, #b3e5fc, #b2ebf2,#81d4fa,#80deea,#b2dfdb);
+    }
+</style>
+<body>
+    <div class="padleft">
+        <div class="bg" align="center">
+        <svg width="300px" height="175px" version="1.1">
+            <path fill="transparent" stroke="#000000" stroke-width="4" d="M10 80 Q 77.5 10, 145 80 T 280 
+            80" class="path"></path></svg>
+        </div>
+        <div class="padleft div-title">
+            <h1>SVG Paths Animate & CSS - Stroke-dashoffset Property</h1>
+            <p>The stroke-dasharray attribute controls the pattern of dashes and gaps used to stroke the path. If you wanted to draw your
+            lines as a group of dashes and gaps instead of one continuous stroke of ink, this is the attribute you would use.</p>
+            <p>With SVG images being a part s of the web browser’s DOM and stroke-dasharray being a presentation element, the attribute
+            can also be set using CSS.</p>
+            <p>Similarly, the stroke-dashoffset attribute (which specifies how far into the dash pattern to start the dash) can also be
+            controlled using CSS.</p>
+            <p>These two SVG attributes, together, can be used to animate SVG paths, giving the viewer the illusion that the paths are being
+            drawn gradually.</p>
+            <p>To animate this path as if it is being drawn gradually and smoothly on the screen, we will have to set the dash (and gap)
+            lengths, using the stroke-dasharray attribute, equal to the path length. This is so that the length of each dash and gap
+            in the dashed curve is equal to the length of the entire path.</p>
+            <p>Next, we will set the dash offset, using the stroke-dashoffset attribute, to 0. This will make the path appear on screen
+            as a solid curve (we are essentially looking at the first dash, and we already made each dash span the entire length of the
+            curve). By setting the dash offset equal to the length of the curve, we will end up with an invisible curve (we are now looking
+            at the curve being rendered as an entire gap—the part that immediately follows a dash).</p>
+        </div>
+    </div>
+</body>
+</html>
