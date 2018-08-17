@@ -1,0 +1,3 @@
+My java application program made in NetBeans
+try to Run in Netbeans.
+it will be broken if all folder and files are separate
