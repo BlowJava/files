@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to the Web</title>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var dateToday = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var AmPm = h >= 12 ? 'PM' : 'AM';
+            h %= 12;
+            h = h ? h : 12;
+            m = m < 10 ? ''+ m : m;
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('time').innerHTML = "TIME: " + h + ":" + m + ":" + s + " "+ AmPm;
+            document.getElementById('dateToday').innerHTML = dateToday;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        function birthDay(){
+            var date = new Date();
+            var year = date.getFullYear();
+            var getDay = 19;
+            var getYear = year - 18;
+            document.getElementById('birthday').innerHTML = "My Birthday was " + "June, " + getDay + ", "+ getYear;
+        }
+        // Holidays
+        function Holidays(){
+            var holidays = new Array("ChristMas Day", "December", 25, "Halloween", "November", 2);
+            document.getElementById('holiday').innerHTML = "<br>"+ "Holidays: <br>" + holidays[0] + " - " + holidays[1] + ", " + 
+            holidays[2] + "<br>" + holidays[3] + " - " + holidays[4] + ", " + holidays[5];
+        }
+    
+    </script>
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/LdlcsNn.jpg');
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white;
+        }
+        div.time{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+        }
+        div.birthday{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+        }
+        .info {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body onload="startTime(), birthDay(), Holidays()">
+    <div class="info">
+        <h1>Patrick Renz Garcia</h1>
+    </div>
+    
+    <div id="birthday" class="birthday"></div>
+    <br>
+    <div id="dateToday" class="time"></div>
+
+    <div id="time" class="time"></div>
+
+    <div id="holiday" class="time"></div>
+    
+</body>
+</html>
